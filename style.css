@@ -18,11 +18,14 @@ body {
       margin: 0 auto;
   }
 
+  /* TOP NAV */
+
   .top-nav {
       height: 50px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      font-size: 13px;
   }
   .top-nav ul {
       list-style: none;
@@ -30,19 +33,34 @@ body {
 
   .top-nav li {
       display: inline-block;
+      padding: 5px 10px;
   }
 
   .top-nav li a {
     color: #262626;
     text-decoration: none;
-    padding: 5px 10px;
+    border-bottom: 0px solid black;
+    padding-bottom: 2px;
+  }
+
+  .top-nav li a:hover {
+      border-bottom: 2px solid black;
   }
   
   .left-nav {
       display: flex;
+      align-items: center;
   }
 
   .logo {
-      width: 110px;
+      height: 20px;
       margin-right: 20px;
+  }
+
+  /* SLIDER */
+
+  .slider {
+      background: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4rIOh?ver=5a47&q=90&m=8&h=472&w=1259&b=%23FFFFFFFF&l=f&x=0&y=198&s=2120&d=795&aim=true)
+      ;
+      height: 375px;
   }
