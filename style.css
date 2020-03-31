@@ -40,7 +40,7 @@ body {
   .top-nav li a {
     color: #262626;
     text-decoration: none;
-    border-bottom: 0px solid black;
+    border-bottom: 2px solid transparent;
     padding-bottom: 2px;
   }
 
@@ -185,7 +185,7 @@ body {
       text-decoration: none;
       font-size: 15px;
       font-weight: 600;
-      border-bottom: 1px solid transparent;
+      border-bottom: 2px solid transparent;
       transition: 0.2s;
   }
   .news i {
@@ -193,6 +193,7 @@ body {
       margin-left: 10px;
       left: 0;
       transition: 0.3s;
+      border-bottom: 2px solid transparent;
   }
 
   .news a:hover {
@@ -336,6 +337,23 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+    }
+
+    @media (max-width: 768px) {
+        .buy-things {
+            flex-direction: column;
+        }
+      
+        .buy-things .item {
+            margin-top: 10px;
+            width: auto;
+            flex-direction: row;
+        }
+      
+        .buy-things p {
+            margin-top: 0;
+            margin-left: 15px;
+        }
     }
 
 
