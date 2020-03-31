@@ -14,7 +14,7 @@ body {
 
   .container {
       width: 90%;
-      max-width: 1100px;
+      max-width: 1400px;
       margin: 0 auto;
   }
 
@@ -26,6 +26,7 @@ body {
       justify-content: space-between;
       align-items: center;
       font-size: 13px;
+      padding: 0 10px;
   }
   .top-nav ul {
       list-style: none;
@@ -51,16 +52,90 @@ body {
       display: flex;
       align-items: center;
   }
+  li i {
+      margin-left: 5px;
+      font-size: 14px;
+  }
 
   .logo {
-      height: 20px;
+      height: 25px;
       margin-right: 20px;
+  }
+
+  .right-nav {
+      display:flex;
+  }
+  
+  .sign-in {
+      padding: 5px 10px;
+      border: none;
+      background-color: #fff;
+      cursor: pointer;
+      font-size: 15px;
   }
 
   /* SLIDER */
 
   .slider {
+      position: relative;
       background: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4rIOh?ver=5a47&q=90&m=8&h=472&w=1259&b=%23FFFFFFFF&l=f&x=0&y=198&s=2120&d=795&aim=true)
-      ;
-      height: 375px;
+      center center/cover;
+      height: 475px;
+  }
+
+  .wrapper-for-text {
+      position: absolute;
+      top: 30%;
+      left: 8%;
+      width: 30%;
+      color: white;
+  }
+  .wrapper-for-text h2 {
+      font-size: 30px;
+  }
+
+  .wrapper-for-text a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 25px;
+      text-decoration: none;
+      color: #000;
+      text-transform: uppercase;
+      background-color: #fff;
+  }
+
+  .wrapper-for-text i {
+      position: relative;
+      transition: 0.3s;
+      left: 0;
+  }
+
+  .wrapper-for-text a:hover i {
+      left: 5px;
+  }
+
+  /* BUY THINGS */
+
+  .buy-things {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 70px 0 40px;
+  }
+
+  .buy-things .item {
+      font-size: 16px;
+      display: flex;
+      width: 180px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+  }
+
+  .buy-things p {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 600;
   }
