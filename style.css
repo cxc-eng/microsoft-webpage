@@ -21,7 +21,7 @@ body {
   /* TOP NAV */
 
   .top-nav {
-      height: 50px;
+      height: 55px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -91,7 +91,8 @@ body {
       color: white;
   }
   .wrapper-for-text h2 {
-      font-size: 30px;
+    font-size: 46px;
+    font-weight: 600;
   }
 
   .wrapper-for-text a {
@@ -102,6 +103,18 @@ body {
       color: #000;
       text-transform: uppercase;
       background-color: #fff;
+  }
+
+  .wrapper-for-text .left-on-hover {
+      position: relative;
+      left: 0;
+      border-bottom: 2px solid transparent;
+      transition: 0.3s;
+  }
+
+  .wrapper-for-text a:hover .left-on-hover  {
+      left: -5px;
+      border-bottom: 2px solid black;
   }
 
   .wrapper-for-text i {
@@ -139,3 +152,68 @@ body {
       font-size: 15px;
       font-weight: 600;
   }
+
+  /* NEWS SECTION */
+  .news-section {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+  }
+
+  .news:hover img {
+      opacity: 0.8;
+  }
+
+  .news-section img {
+      width: 100%;
+  }
+
+
+  .news h3 {
+      margin-top: 35px;
+      font-size: 20px;
+      font-weight: 600;
+  }
+  .news a {
+      display: inline-block;
+      margin-top: 15px;
+      margin-left: 5px;
+      margin-right: 15px;
+      color: #0067b8;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+      border-bottom: 1px solid transparent;
+      transition: 0.2s;
+  }
+  .news i {
+      position: relative;
+      margin-left: 10px;
+      left: 0;
+      transition: 0.3s;
+  }
+
+  .news a:hover {
+      border-bottom: 2px solid;
+  }
+
+  .news a:hover i {
+      left: 5px
+  }
+
+  /* XBOX SECTION */
+
+  .slider.xbox {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      background: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Eyde?ver=043f&q=90&m=8&h=600&w=1600&b=%23FFFFFFFF&l=f&x=0&y=169&s=2120&d=795&aim=true)
+      center center/cover;
+  }
+
+  /* NEWS 2 */
+  .in-our-company {
+      margin-top: 40px;
+      margin-bottom: 20px;
+  }
+  
+
