@@ -185,7 +185,7 @@ body {
       text-decoration: none;
       font-size: 15px;
       font-weight: 600;
-      border-bottom: 2px solid transparent;
+      border-bottom: px solid transparent;
       transition: 0.2s;
   }
   .news i {
@@ -334,10 +334,12 @@ body {
 
   @media (max-width: 1080px) {
     .news-section {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
     }
+    .background-colorizer {
+        grid-template-columns: repeat(3, 1fr);
+      }
+}
 
     @media (max-width: 768px) {
         .buy-things {
@@ -373,6 +375,5 @@ body {
         }
     }
 
-  }
   
 
