@@ -82,18 +82,18 @@ body {
 
   .slider {
       position: relative;
-      /* height: 475px; */
   }
 
   .wrapper-for-text {
       position: absolute;
-      top: 30%;
+      top: 50%;
+      transform: translateY(-50%);
       left: 8%;
-      width: 30%;
+      width: 45%;
       color: white;
   }
   .wrapper-for-text h2 {
-    font-size: 46px;
+    font-size: 24px;
     font-weight: 600;
   }
 
@@ -293,7 +293,7 @@ body {
   /* BOTTOM LINKS */
 
   .bottom-links {
-      padding-top: 10px;
+      padding-top: 30px;
       max-width: 1400px;
       margin: 0 auto;
       width: 90%;
@@ -321,7 +321,6 @@ body {
       margin-right: 20px;
   }
 
-
   .mobile-top-nav {
       display: none;
       justify-content: space-between;
@@ -330,15 +329,44 @@ body {
   }
 
 
+
+
+
   /* MEDIA QUERIES */
 
-  @media (max-width: 1080px) {
+  @media (max-width: 1083px) {
     .news-section {
         grid-template-columns: repeat(2, 1fr);
     }
     .background-colorizer {
         grid-template-columns: repeat(3, 1fr);
       }
+    .container {
+        width: 100%;
+    }
+
+    .in-our-company {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .news-section {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .background-colorizer {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .bottom-links {
+        width: 100%;
+        padding: 15px 15px 0 15px;
+    }
+    .top-nav {
+        width: 95%;
+        margin: 0 auto;
+    }
+
 }
 
     @media (max-width: 768px) {
@@ -356,6 +384,51 @@ body {
             margin-top: 0;
             margin-left: 15px;
         }
+        
+        .slider {
+            font-size: 0;
+            overflow: hidden;
+        }
+
+        .wrapper-for-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            position: static;
+            background: #333;
+            width: 100%;
+            transform: translateY(0);
+            height: 300px;
+            text-align: center;
+            padding: 0 10%;
+        }
+        .wrapper-for-text h2 {
+            font-size: 20px;
+        }
+        .buy-things {
+            width: 90%;
+            margin: 0 auto;
+            padding: 40px 0 40px;
+        }
+
+        .buy-things p {
+            font-size: 15px;
+        }
+        .item {
+            margin-bottom: 20px;
+        }
+
+        .buy-things img {
+            width: 20px;
+        }
+
+        .socials {
+            padding: 0 5%;
+        }
+
+
     }
 
 
