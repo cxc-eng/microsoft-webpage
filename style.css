@@ -155,6 +155,11 @@ body {
       font-weight: 600;
   }
 
+  .buy-things .item p:hover {
+     text-decoration: underline;
+     cursor: pointer;
+  }
+
   /* NEWS SECTION */
   .news-section {
       display: grid;
