@@ -185,7 +185,7 @@ body {
       text-decoration: none;
       font-size: 15px;
       font-weight: 600;
-      border-bottom: px solid transparent;
+      border-bottom: 2px solid transparent;
       transition: 0.2s;
   }
   .news i {
