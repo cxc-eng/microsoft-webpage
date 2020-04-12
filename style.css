@@ -15,11 +15,15 @@
    10. MEDIA QUERIES
     */
 
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+img,
+i {
+    cursor: pointer;
 }
 
 body {
@@ -46,6 +50,7 @@ body {
       font-size: 13px;
       padding: 0 10px;
   }
+  
   .top-nav ul {
       list-style: none;
   }
@@ -70,6 +75,7 @@ body {
       display: flex;
       align-items: center;
   }
+
   li i {
       margin-left: 5px;
       font-size: 14px;
@@ -110,6 +116,7 @@ body {
       width: 45%;
       color: white;
   }
+
   .wrapper-for-text h2 {
     font-size: 24px;
     font-weight: 600;
@@ -199,6 +206,7 @@ body {
       font-size: 20px;
       font-weight: 600;
   }
+
   .news a {
       display: inline-block;
       margin-top: 15px;
@@ -211,6 +219,7 @@ body {
       border-bottom: 2px solid transparent;
       transition: 0.2s;
   }
+
   .news i {
       position: relative;
       margin-left: 10px;
@@ -335,6 +344,7 @@ body {
       justify-content: center;
       font-size: 13px;
   }
+
   .left-part i {
       font-size: 20px;
       margin-right: 10px;
@@ -393,9 +403,11 @@ body {
     .news-section {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .fullwidth-div-for-setting-bgcolor {
         grid-template-columns: repeat(3, 1fr);
-      }
+    }
+
     .container {
         width: 100%;
     }
@@ -409,19 +421,21 @@ body {
         width: 90%;
         margin: 0 auto;
     }
+
     .fullwidth-div-for-setting-bgcolor {
         width: 100%;
         padding: 0 15px;
     }
+
     .bottom-links {
         width: 100%;
         padding: 15px 15px 0 15px;
     }
+
     .top-nav {
         width: 95%;
         margin: 0 auto;
     }
-
 }
 
     @media (max-width: 768px) {
@@ -459,9 +473,11 @@ body {
             text-align: center;
             padding: 0 10%;
         }
+
         .wrapper-for-text h2 {
             font-size: 20px;
         }
+
         .buy-microsoft-products {
             width: 90%;
             margin: 0 auto;
@@ -471,6 +487,7 @@ body {
         .buy-microsoft-products p {
             font-size: 15px;
         }
+
         .single-product {
             margin-bottom: 20px;
         }
@@ -491,6 +508,7 @@ body {
         .news-section {
             grid-template-columns: 1fr;
         }
+
         .fullwidth-div-for-setting-bgcolor {
             grid-template-columns: 1fr;
           }
