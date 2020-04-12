@@ -66,7 +66,7 @@ body {
       border-bottom: 2px solid black;
   }
   
-  .left-nav {
+  .left-side-of-top-nav {
       display: flex;
       align-items: center;
   }
@@ -80,7 +80,7 @@ body {
       margin-right: 20px;
   }
 
-  .right-nav {
+  .right-side-nav-of-top-nav {
       display:flex;
   }
   
@@ -125,14 +125,14 @@ body {
       background-color: #fff;
   }
 
-  .wrapper-for-text .left-on-hover {
+  .wrapper-for-text .button-with-animation-on-hover {
       position: relative;
       left: 0;
       border-bottom: 2px solid transparent;
       transition: 0.3s;
   }
 
-  .wrapper-for-text a:hover .left-on-hover  {
+  .wrapper-for-text a:hover .button-with-animation-on-hover  {
       left: -5px;
       border-bottom: 2px solid black;
   }
@@ -149,14 +149,14 @@ body {
 
   /* BUY THINGS */
 
-  .buy-things {
+  .buy-microsoft-products {
       display: flex;
       align-items: flex-start;
       justify-content: center;
       padding: 70px 0 40px;
   }
 
-  .buy-things .item {
+  .buy-microsoft-products .single-product {
       font-size: 16px;
       display: flex;
       width: 180px;
@@ -166,14 +166,14 @@ body {
       padding: 0 20px;
   }
 
-  .buy-things p {
+  .buy-microsoft-products p {
       margin-top: 10px;
       text-align: center;
       font-size: 15px;
       font-weight: 600;
   }
 
-  .buy-things .item p:hover {
+  .buy-microsoft-products .single-product p:hover {
      text-decoration: underline;
      cursor: pointer;
   }
@@ -270,7 +270,7 @@ body {
   }
   
   /* BOTTOM NAV */
-  .background-colorizer {
+  .fullwidth-div-for-setting-bgcolor {
     max-width: 1400px;
     width: 90%;
     margin: 0 auto;
@@ -290,7 +290,7 @@ body {
     padding: 8px 0;
   }
 
-  .bottom-nav .background-colorizer li:first-of-type {
+  .bottom-nav .fullwidth-div-for-setting-bgcolor li:first-of-type {
       font-size: 15px;
       font-weight: bold;
   }
@@ -356,9 +356,6 @@ body {
   }
 
 
-
-
-
   /* MEDIA QUERIES */
 
 
@@ -366,17 +363,18 @@ body {
   /* making top-nav collapse responsively */
 
   @media (max-width: 1250px) {
-      .right-nav li:first-of-type {
+      .right-side-nav-of-top-nav li:first-of-type {
           display: none;
       }
   }
   @media (max-width: 930px) {
-    .right-nav li:nth-of-type(2) a {
-        display: none;
+        .right-side-nav-of-top-nav li:nth-of-type(2) a {
+            display: none;
+        }
     }
 
     @media (max-width: 870px) {
-        .right-nav li:nth-of-type(3) a {
+        .right-side-nav-of-top-nav li:nth-of-type(3) a {
             display: none;
         }
     }
@@ -390,13 +388,12 @@ body {
             display: flex;
         }
     }
-}
 
   @media (max-width: 1083px) {
     .news-section {
         grid-template-columns: repeat(2, 1fr);
     }
-    .background-colorizer {
+    .fullwidth-div-for-setting-bgcolor {
         grid-template-columns: repeat(3, 1fr);
       }
     .container {
@@ -412,7 +409,7 @@ body {
         width: 90%;
         margin: 0 auto;
     }
-    .background-colorizer {
+    .fullwidth-div-for-setting-bgcolor {
         width: 100%;
         padding: 0 15px;
     }
@@ -428,17 +425,17 @@ body {
 }
 
     @media (max-width: 768px) {
-        .buy-things {
+        .buy-microsoft-products {
             flex-direction: column;
         }
       
-        .buy-things .item {
+        .buy-microsoft-products .single-product {
             margin-top: 10px;
             width: auto;
             flex-direction: row;
         }
       
-        .buy-things p {
+        .buy-microsoft-products p {
             margin-top: 0;
             margin-left: 15px;
         }
@@ -465,20 +462,20 @@ body {
         .wrapper-for-text h2 {
             font-size: 20px;
         }
-        .buy-things {
+        .buy-microsoft-products {
             width: 90%;
             margin: 0 auto;
             padding: 40px 0 40px;
         }
 
-        .buy-things p {
+        .buy-microsoft-products p {
             font-size: 15px;
         }
-        .item {
+        .single-product {
             margin-bottom: 20px;
         }
 
-        .buy-things img {
+        .buy-microsoft-products img {
             width: 20px;
         }
 
@@ -494,7 +491,7 @@ body {
         .news-section {
             grid-template-columns: 1fr;
         }
-        .background-colorizer {
+        .fullwidth-div-for-setting-bgcolor {
             grid-template-columns: 1fr;
           }
 
