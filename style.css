@@ -13,8 +13,7 @@
    8. BOTTOM-NAV
    9. BOTTOM LINKS
    10. MEDIA QUERIES
-
-      */
+    */
 
 
 * {
@@ -352,11 +351,46 @@ body {
       height: 50px;
   }
 
+  .mobile-top-nav i {
+    margin: 0 10px;
+  }
+
 
 
 
 
   /* MEDIA QUERIES */
+
+
+
+  /* making top-nav collapse responsively */
+
+  @media (max-width: 1250px) {
+      .right-nav li:first-of-type {
+          display: none;
+      }
+  }
+  @media (max-width: 930px) {
+    .right-nav li:nth-of-type(2) a {
+        display: none;
+    }
+
+    @media (max-width: 870px) {
+        .right-nav li:nth-of-type(3) a {
+            display: none;
+        }
+    }
+
+    @media (max-width: 830px) {
+        .top-nav {
+            display: none;
+        }
+
+        .mobile-top-nav {
+            display: flex;
+        }
+    }
+}
 
   @media (max-width: 1083px) {
     .news-section {
@@ -463,13 +497,7 @@ body {
         .background-colorizer {
             grid-template-columns: 1fr;
           }
-        .top-nav {
-            display: none;
-        }
 
-        .mobile-top-nav {
-            display: flex;
-        }
     }
 
   
